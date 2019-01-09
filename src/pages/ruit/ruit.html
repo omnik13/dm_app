@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-navbar color="bk">
+    <!-- TITLE -->
+    <ion-title>
+      Ruit
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- MAIN PAGE -->
+<ion-content id="page1">
+  <!-- TOP HEADING -->
+  <h4 id="ruit-heading1" style="color:black;text-align:center;">
+    ENGLISH GEMATRIA CALCULATOR
+  </h4>
+  <!-- ENGLISH ORDINAL -->
+  <ion-list id="ruit-list1">
+    <ion-item color="none" id="ruit-list-item1">
+      English Ordinal:
+      <span class="item-note">{{engOrd}}</span>
+    </ion-item>
+    <!-- END -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- FULL REDUCTION -->
+    <ion-item color="none" id="ruit-list-item2">
+      Full Reduction:
+      <span class="item-note">{{fulReduc}}</span>
+    </ion-item>
+    <!-- END -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- PRIMES -->
+    <ion-item color="none" id="ruit-list-item3">
+      Primes:
+      <span class="item-note">{{primes}}</span>
+    </ion-item>
+    <!-- END -->
+    <!--  -->
+  </ion-list>
+  <!-- END FIRST LIST ITEMS (CYPHERS) -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- SPACER -->
+  <div class="spacer" style="width:320px;height:29px;" id="ruit-spacer1"></div>
+  <!--  -->
+  <!--  -->
+  <!-- NUMBER OF CHARACTERS -->
+  <ion-list id="ruit-list2">
+    <ion-item color="none" id="ruit-list-item5">
+      Number of Characters:
+      <span class="item-note">{{numOChar}}</span>
+    </ion-item>
+    <!-- END -->
+    <!--  -->
+  </ion-list>
+  <!-- END SECOND LIST ITEMS (NUM O CHAR) -->
+  <!--  -->
+  <!--  -->
+  <!-- SPACER -->
+  <div class="spacer" style="width:320px;height:25px;" id="ruit-spacer2"></div>
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- FORM BEGINS -->
+  <form id="ruit-form1">
+    <!--  -->
+    <!--  -->
+    <!-- USER INPUT TEXT AREA -->
+    <ion-item id="ruit-input1">
+      <ion-label stacked>Calculate for:</ion-label>
+      <ion-input type="text" id="input" [(ngModel)]="userInput" name="imp" placeholder="i.e. Love is A Fire"></ion-input>
+    </ion-item>
+    <!-- END OF USER INPUT -->
+    <div class="spacer" style="width:320px;height:11px;" id="ruit-spacer3"></div>
+    <!--  -->
+    <!--  -->
+  </form>
+  <!--  -->
+  <form id="ruit-form2">
+    <!-- SPACER -->
+    <div class="spacer" style="width:320px;height:11px;" id="ruit-spacer3"></div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- CALCULATE BUTTON -->
+    <button id="ruit-button1" ion-button (click)="calGema(input)" color="tomato" block>
+      <ion-icon name="arrow-up"></ion-icon>
+      GO
+    </button>
+    <!-- END BUTTON -->
+    <!--  -->
+    <!--  -->
+  </form>
+  <!-- END OF FORM -->
+  <!--  -->
+  <!--  -->
+</ion-content>
+<!-- END MAIN PAGE -->
